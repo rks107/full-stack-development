@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    
+       <title>Form</title>
+    
+    </head>
+    <body style="background-color: aqua">
+    
+        <div>
+          <a href="index.html"><h2>Home</h2></a>
+        </div>
+        <div>
+        
+            <form>
+               <div>
+                   <label for="username">Username</label>
+                   <input type="text" id="username" required>
+               </div>
+                <br>
+                <div>
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" required placeholder="abc@example.com">
+                </div>
+                <br>
+                <div>
+                   <label for="gender">Gender</label>
+                   <input type="radio" id="gender" name="gender" value="male" checked>male
+                    <input type="radio" id="gender" name="gender" value="female">female
+                    <input type="radio" id="gender" name="gender" value="other">others
+               </div>
+                <br>
+                <div>
+                   <label for="age">Age</label>
+                   <input type="number" id="age" value="20" required>
+               </div>
+                <br>
+                <div>
+                    <label for="url">Facbook Page</label>
+                    <input type="url" id="url">
+                </div>
+                <br>
+                <div>
+                    <label for="month">Month of Birth</label>
+                    <select id="month" name="month-slected"> <!-- multiple size="3"  -->
+                        <option>jan</option>
+                        <option>feb</option>
+                        <option>mar</option>
+                        <option>apr</option>
+                        <option>may</option>
+                        <option>jun</option>
+                        <option selected>jul</option>
+                        <option>aug</option>
+                        <option>sep</option>
+                        <option>oct</option>
+                        <option>nov</option>
+                        <option>dec</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                   <label for="time">Time Of Birth</label>
+                   <input type="time" id="time" required>
+               </div>
+                <br>
+                <div>
+                   <label >Courses</label>
+                    <input type="checkbox" name="course" value="C++" checked>C++
+                    <input type="checkbox" name="course" value="Java">Java
+                    <input type="checkbox" name="course" value="Python">Python
+                </div>
+                <br>
+                <div>
+                Select books or Snippets:
+                <select>
+                     <optgroup label="books">
+                            <option value="HTML">HTML</option>
+                             <option value="css">CSS</option>
+                    </optgroup>
+                    <optgroup label="Snippets">
+                        <option value="git">Git</option>
+                        <option value="java">Java</option>
+                    </optgroup>
+             </select>
+                    </div>
+                <br>
+                <div>
+                    <label for="range">How much You Rate</label>
+                    <input type="range" id="range" required min="0" max="10" step="2">
+                </div>
+                <br>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <br>
+                <div>
+                  <fieldset  width="50">
+                    <legend>SUBSCRIBE:</legend>
+                          Name:<input type="text"><br><br>
+                          E-mail:<input type="text"><br>
+                </fieldset>
+                </div>
+                <br>
+                <div>
+<!--                <input type="submit" value="Submit">-->
+                    <button type="submit" autofocus onclick="alert('Submit Data ?')">
+                        <img src="media/webd.jpeg" height="20" width="40">
+                        <b>Submit</b>
+                    </button>
+                </div>
+            </form>
+            
+        </div>
+    
+    </body>
+</html>
